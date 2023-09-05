@@ -31,7 +31,6 @@ export default async function Movies() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-12">
-      <Image src={"/logo.png"} width={200} height={100} alt="movies" />
       <div className="flex flex-wrap justify-center gap-5">{moviesElement}</div>
     </main>
   );

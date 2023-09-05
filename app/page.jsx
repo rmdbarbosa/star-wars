@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-12">
-      <Image src={"/logo.png"} width={200} height={100} alt="star wars logo" />
       <div className="flex justify-around w-screen text-center flex-col sm:flex-row gap-3 p-6">
         <Link href={"/characters"}>
           <div className="flex flex-col gap-5">

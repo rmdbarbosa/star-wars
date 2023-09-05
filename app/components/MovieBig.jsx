@@ -41,8 +41,6 @@ function MovieBig({ title, opening_crawl, characters, poster }) {
 
   return (
     <main className="flex gap-5 flex-col min-h-screen items-center p-6 w-full">
-      <Image src={"/logo.png"} width={200} height={100} alt="movies" />
-
       <div className="mb-4 sm:mb-0 sm:mr-4 lg:mr-8">
         <Image
           src={poster}

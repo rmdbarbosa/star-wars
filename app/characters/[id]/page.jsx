@@ -41,14 +41,6 @@ export default function ClientCharacters() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-12">
-      <Image
-        src={"/logo.png"}
-        width={200}
-        height={100}
-        alt="chars"
-        unoptimized
-      />
-
       {isLoading ? (
         <CircularProgress />
       ) : (

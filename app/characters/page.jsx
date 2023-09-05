@@ -14,7 +14,6 @@ export default async function Characters() {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-12">
-      <Image src={"/logo.png"} width={200} height={100} alt="chars" />
       <div className="flex flex-wrap justify-center gap-5">{charElements}</div>
       <div className="flex justify-center gap-5 mt-2 border">
         <Link href={"/characters/2"}>

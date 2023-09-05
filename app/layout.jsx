@@ -1,5 +1,7 @@
+import Image from "next/image";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,8 +12,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="overflow-x-hidden">
+      <body className={inter.className}>
+        <div className="flex justify-center ">
+          <Link href={"/"}>
+            <Image
+              src={"/logo.png"}
+              width={200}
+              height={100}
+              alt="star wars logo"
+            />
+          </Link>
+        </div>
+
+        {children}
+      </body>
     </html>
   );
 }
