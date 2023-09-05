@@ -20,7 +20,14 @@ export default function Home() {
         <Link href={"/movies"}>
           <div className="flex flex-col gap-5">
             <h2 className="text-lg font-bold">Movies</h2>
-            <Image src={"/chars.jpg"} width={500} height={300} alt="Movies" />
+            <Image
+              src={
+                "https://s3.wasabisys.com/instax/74/instax/2023/04/star-wars-1680799242.jpg"
+              }
+              width={500}
+              height={300}
+              alt="Movies"
+            />
           </div>
         </Link>
       </div>
