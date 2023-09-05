@@ -3,8 +3,19 @@ import Card from "@mui/joy/Card";
 import CardCover from "@mui/joy/CardCover";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
+import BasicModal from "./BasicModal";
 
-export default async function CharacterCard({ name, birth_year, species }) {
+export default async function CharacterCard({
+  name,
+  birth_year,
+  species,
+  eye_color,
+  gender,
+  hair_color,
+  height,
+  mass,
+  skin_color,
+}) {
   const fetchSpecies = async () => {
     if (species.length > 0) {
       try {
@@ -50,6 +61,16 @@ export default async function CharacterCard({ name, birth_year, species }) {
           Species: {species.length > 0 ? specie : "Unknown"}
         </Typography>
       </CardContent>
+      <BasicModal
+        name={name}
+        birth_year={birth_year}
+        eye_color={eye_color}
+        gender={gender}
+        hair_color={hair_color}
+        height={height}
+        mass={mass}
+        skin_color={skin_color}
+      />
     </Card>
   );
 }
