@@ -47,8 +47,8 @@ export default function ClientCharacters() {
         height={100}
         alt="chars"
         unoptimized
-      />{" "}
-      {/* Skip image optimization */}
+      />
+
       {isLoading ? (
         <CircularProgress />
       ) : (

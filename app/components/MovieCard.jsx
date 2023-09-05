@@ -4,11 +4,11 @@ import CardCover from "@mui/joy/CardCover";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
 
-export default async function MovieCard({ title, episode_id }) {
+export default async function MovieCard({ title, episode_id, poster }) {
   return (
     <Card sx={{ minHeight: "280px", width: 320 }}>
       <CardCover>
-        <img src={"./logo.png"} loading="lazy" alt="beyt" />
+        <img src={poster} loading="lazy" alt="movie" />
       </CardCover>
       <CardCover
         sx={{
